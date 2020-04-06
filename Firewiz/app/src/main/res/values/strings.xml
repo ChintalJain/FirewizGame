@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">Firewiz</string>
+    <string name="app_name">FIREWIZ</string>
+    <string name="account_icon">MyAccount</string>
+    <string name="QuizSearch">Search_Icon</string>
+    <string name="FullName">Full Name</string>
+    <string name="UserName">Username</string>
+    <string name="email">E-mail</string>
+    <string name="Password">Password</string>
+    <string name="ConfirmPassword">Confirm Password</string>
+    <string name="Male">Male</string>
+    <string name="Female">Female</string>
+    <string name="Gender">Gender</string>
+    <string name="loginButton">Login</string>
+    <string name="signupButton">Sign Up</string>
+    <string name="signoutButton">Sign Out</string>
+    <string name="homeButton">Play Quiz!!</string>
+    <string name="cq">Common Quiz</string>
+    <string name="dob">Date of Birth(DD/MM/YYYY)</string>
 </resources>

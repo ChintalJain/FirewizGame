@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "642363374326",
+    "firebase_url": "https://firewiz-ce532.firebaseio.com",
+    "project_id": "firewiz-ce532",
+    "storage_bucket": "firewiz-ce532.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642363374326:android:55fa52df1839d6f5b50ad7",
+        "android_client_info": {
+          "package_name": "com.example.firewiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642363374326-tmsqj9512n1vt18grql2qtfmc6vb4dst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXaGiqqGvfJSix8OfYZ_yI9t6BEK17G7M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642363374326-tmsqj9512n1vt18grql2qtfmc6vb4dst.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
