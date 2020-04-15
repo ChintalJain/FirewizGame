@@ -16,4 +16,8 @@
     <string name="homeButton">Play Quiz!!</string>
     <string name="cq">Common Quiz</string>
     <string name="dob">Date of Birth(DD/MM/YYYY)</string>
+    <string name="Opt1">Option 1</string>
+    <string name="Opt2">Option 2</string>
+    <string name="Opt3">Option 3</string>
+    <string name="Opt4">Option 4</string>
 </resources>

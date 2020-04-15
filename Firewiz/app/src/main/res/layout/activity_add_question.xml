@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuestion"
+
+    android:background="#E1BEE7"
+    android:orientation="vertical"
+    android:padding="30dp"
+    >
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColorHint="@color/colorBlue"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Question"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            tools:targetApi="o"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColorHint="@color/colorBlue"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/opt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Opt1"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            tools:targetApi="o"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColorHint="@color/colorBlue"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/opt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Opt2"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            tools:targetApi="o"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColorHint="@color/colorBlue"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/opt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Opt3"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            tools:targetApi="o"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColorHint="@color/colorBlue"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/opt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/Opt4"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            tools:targetApi="o"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--<com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:textColorHint="@color/colorBlue"
+        android:layout_marginTop="5dp"
+        >
+
+        <EditText
+            android:id="@+id/confirmPasswo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correct Answer"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="22sp"
+            tools:targetApi="o"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+-->
+    <RadioGroup
+        android:id="@+id/correctAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20sp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Correct Option"
+            android:textSize="20sp"></TextView>
+        <RadioButton
+            android:id="@+id/opt1RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Opt1"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"></RadioButton>
+        <RadioButton
+            android:id="@+id/opt2RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Opt2"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"></RadioButton>
+        <RadioButton
+            android:id="@+id/opt3RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Opt3"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"></RadioButton>
+        <RadioButton
+            android:id="@+id/opt4RB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Opt4"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"></RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/nextQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Question To Quiz"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/roundedbutton"
+        android:layout_marginTop="5dp"></Button>
+
+    <Button
+        android:id="@+id/endQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="End Quiz"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/roundedbutton"
+        android:layout_marginTop="5dp"></Button>
+
+    <ProgressBar
+        android:id="@+id/endQuizPB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>
+
