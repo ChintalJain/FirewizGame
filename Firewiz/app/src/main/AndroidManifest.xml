@@ -12,19 +12,19 @@
         <activity android:name=".Result"></activity>
         <activity android:name=".AddQuestion" />
         <activity android:name=".CreateQuiz"></activity>
-        <activity android:name=".PlayQuiz">
+        <activity android:name=".PlayQuiz"></activity>
+        <activity android:name=".Signup" />
+        <activity android:name=".Login" />
+        <activity android:name=".Search" />
+        <activity android:name=".UserProfile" />
+        <activity android:name=".Home"/>
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Signup" />
-        <activity android:name=".Login" />
-        <activity android:name=".Search" />
-        <activity android:name=".UserProfile" />
-        <activity android:name=".Home" />
-        <activity android:name=".MainActivity" />
     </application>
 
 </manifest>

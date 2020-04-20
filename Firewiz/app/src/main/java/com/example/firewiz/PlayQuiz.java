@@ -81,7 +81,7 @@ public class PlayQuiz extends AppCompatActivity {
             i.putExtra("total",String.valueOf(totalQuestion));
             i.putExtra("correct",String.valueOf(correct));
             i.putExtra("incorrect",String.valueOf(wrong));
-            startActivity(i);
+            startActivityForResult(i,1);
         }
         else
         {
@@ -340,8 +340,18 @@ public class PlayQuiz extends AppCompatActivity {
                 myIntent.putExtra("total",String.valueOf(totalQuestion));
                 myIntent.putExtra("correct",String.valueOf(correct));
                 myIntent.putExtra("incorrect",String.valueOf(wrong));
-                startActivity(myIntent);
+                startActivityForResult(myIntent,1);
             }
         }.start();
+    }
+    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==1)
+        {
+            Log.d("Play Quiz","From Result");
+            finish();
+            return;
+        }
     }
 }
