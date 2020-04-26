@@ -34,5 +34,197 @@
 
         </RelativeLayout>
     </androidx.appcompat.widget.Toolbar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="10dp"
+                android:background="#fece2f">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fece2f"
+                    android:fontFamily="@font/bangers"
+                    android:text="Enter Game Pin"
+                    android:onClick="btn_showDialog"/>
 
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/userprofile"
+                    android:layout_centerVertical="true"/>
+                <TextView
+                    android:id="@+id/fullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIREWIZ"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/bangers"
+                    android:layout_toRightOf="@+id/profile"
+                    android:layout_centerVertical="true"
+                    android:includeFontPadding="false"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Built Quizes!"
+                    android:includeFontPadding="false"
+                    android:textSize="14sp"
+                    android:layout_toRightOf="@+id/profile"
+                    android:layout_below="@+id/fullName"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                android:layout_marginTop="-100dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#fece2f"
+                    app:cardElevation="10dp"
+                    android:layout_margin="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/create"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/quiz3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Create"
+                            android:includeFontPadding="false"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/bangers"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:id="@+id/quiz4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="It only takes minutes to create a learning game or trivia quiz on any topic, in any language"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:layout_below="@+id/quiz3"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#fece2f"
+                    app:cardElevation="10dp"
+                    android:layout_margin="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/create"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/quiz5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Host or Share"
+                            android:includeFontPadding="false"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/bangers"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:id="@+id/quiz6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Host a live game  or share a game with remote players"
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:layout_below="@+id/quiz5"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="1dp"
+                >
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="125dp"
+                    android:layout_weight="1"
+                    app:cardBackgroundColor="#fece2f"
+                    app:cardElevation="10dp"
+                    android:layout_margin="10dp">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp">
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/create"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:id="@+id/play"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Play"
+                            android:includeFontPadding="false"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/bangers"
+                            android:layout_centerInParent="true"/>
+                        <TextView
+                            android:id="@+id/quiz8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Game on! Join a kahoot with a PIN provided by the host and answer questions on your device."
+                            android:includeFontPadding="false"
+                            android:textSize="14sp"
+                            android:layout_below="@+id/play"
+                            android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/bottom_navigation_view"
+            app:itemBackground="@color/colorYellow"
+            app:itemIconTint="@drawable/icon_resource_state"
+            app:itemTextColor="@drawable/icon_resource_state"
+            app:menu="@menu/nav_items"/>
 </RelativeLayout>

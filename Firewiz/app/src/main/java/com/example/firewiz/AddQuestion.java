@@ -188,11 +188,13 @@ public class AddQuestion extends AppCompatActivity {
         quizRef.child(String.valueOf(quizID)).child("quizName").setValue(this.quiz.getQuizName());
         quizRef.child(String.valueOf(quizID)).child("description").setValue(this.quiz.getDescription());
         quizRef.child(String.valueOf(quizID)).child("duration").setValue(this.quiz.getDuration());
+        quizRef.child(String.valueOf(quizID)).child("userId").setValue(getIntent().getStringExtra("uid"));
         quizRef.child(String.valueOf(quizID)).child("totalQuestion").setValue(this.quiz.getTotalQuestion())
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
                         ((ProgressBar)findViewById(R.id.endQuizPB)).setVisibility(View.INVISIBLE);
+                        Toast.makeText(AddQuestion.this, "Quiz Id :- "+quizID, Toast.LENGTH_SHORT).show();
                     }
                 });
     }

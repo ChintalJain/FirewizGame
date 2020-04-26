@@ -26,6 +26,7 @@ import com.google.firebase.database.ValueEventListener;
 public class PlayQuiz extends AppCompatActivity {
     Button b1,b2,b3,b4;
     TextView t1_question,timerTxt;
+    CountDownTimer tmr;
 
     int totalQuestion,curQue=0,correct=0,wrong=0,dur;
 
@@ -49,8 +50,8 @@ public class PlayQuiz extends AppCompatActivity {
             finish();
             return;
         }
-        quizRef=FirebaseDatabase.getInstance().getReference().child("Quiz").child("1");
-        questionRef=FirebaseDatabase.getInstance().getReference("Question").child("1");
+        quizRef=FirebaseDatabase.getInstance().getReference().child("Quiz").child(getIntent().getStringExtra("QuizId"));
+        questionRef=FirebaseDatabase.getInstance().getReference("Question").child(getIntent().getStringExtra("QuizId"));
 
         t1_question=(TextView)findViewById(R.id.questionsText);
         timerTxt=(TextView)findViewById(R.id.timerTxt);
@@ -77,10 +78,13 @@ public class PlayQuiz extends AppCompatActivity {
         curQue++;
         if(curQue>totalQuestion)
         {
+            tmr.cancel();
             Intent i=new Intent(this,Result.class);
             i.putExtra("total",String.valueOf(totalQuestion));
             i.putExtra("correct",String.valueOf(correct));
             i.putExtra("incorrect",String.valueOf(wrong));
+            i.putExtra("uid",getIntent().getStringExtra("UserId"));
+            i.putExtra("qid",getIntent().getStringExtra("QuizId"));
             startActivityForResult(i,1);
         }
         else
@@ -324,7 +328,7 @@ public class PlayQuiz extends AppCompatActivity {
 
     public void reverseTimer(int seconds,final TextView tv)
     {
-        new CountDownTimer(seconds*1000+1000,1000){
+        tmr=new CountDownTimer(seconds*1000+1000,1000){
 
             public void onTick(long millisUntilFinished){
                 int seconds=(int)(millisUntilFinished/1000);
@@ -340,6 +344,8 @@ public class PlayQuiz extends AppCompatActivity {
                 myIntent.putExtra("total",String.valueOf(totalQuestion));
                 myIntent.putExtra("correct",String.valueOf(correct));
                 myIntent.putExtra("incorrect",String.valueOf(wrong));
+                myIntent.putExtra("uid",getIntent().getStringExtra("UserId"));
+                myIntent.putExtra("qid",getIntent().getStringExtra("QuizId"));
                 startActivityForResult(myIntent,1);
             }
         }.start();

@@ -65,7 +65,7 @@ public class CreateQuiz extends AppCompatActivity {
                     i.putExtra("qn",quizName);
                     i.putExtra("qd",des);
                     i.putExtra("duration", dur);
-                    //i.putExtra("uid",user.getUid());
+                    i.putExtra("uid",user.getUid());
                     startActivityForResult(i,1);
                 }
             }

@@ -18,7 +18,7 @@
             android:textAlignment="center"
             android:padding="20dp"
             android:layout_marginTop="10dp"
-            android:text="Nimisha Jain"
+            android:text=""
             android:textColor="#010203"
             android:textSize="28sp"
             android:gravity="center_horizontal" />

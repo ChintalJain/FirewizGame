@@ -66,7 +66,7 @@ public class UserDetails {
 
     public boolean validateUserName()
     {
-        return(Pattern.matches("\\S{6,15}",this.userName));
+            return(Pattern.matches("\\S{6,15}",this.userName));
     }
     public boolean validateEmail()
     {
