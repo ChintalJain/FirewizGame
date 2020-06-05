@@ -166,8 +166,8 @@ public class UserProfile extends AppCompatActivity {
                     ((TextView)findViewById(R.id.userName)).setText("Username");
                     ((EditText)findViewById(R.id.upUsername)).setText("Username");
                     ((EditText)findViewById(R.id.upFullName)).setText("Full Name");
-                    ((EditText)findViewById(R.id.upFullName)).setText("Date Of Birth(DD/MM/YYYY)");
-                    ((TextView)findViewById(R.id.quiz3)).setText("0");
+                    ((EditText)findViewById(R.id.upDob)).setText("Date Of Birth(DD/MM/YYYY)");
+                    ((TextView)findViewById(R.id.quiz)).setText("0");
                     ((TextView)findViewById(R.id.quiz3)).setText("0");
                 }
             }
